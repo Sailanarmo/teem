@@ -87,7 +87,7 @@ ENDIF(QNANHIBIT_VALUE)
 
 #-----------------------------------------------------------------------------
 # Teem build configuration options.
-OPTION(BUILD_SHARED_LIBS "Build Teem with shared libraries." OFF)
+OPTION(BUILD_SHARED_LIBS "Build Teem with shared libraries." ON)
 SET(Teem_BUILD_SHARED_LIBS ${BUILD_SHARED_LIBS})
 IF(NOT Teem_BUILD_SHARED_LIBS)
   ADD_DEFINITIONS(-DTEEM_STATIC)
